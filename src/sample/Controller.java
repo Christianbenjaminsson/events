@@ -15,6 +15,12 @@ public class Controller {
     private Button byeButton;
 
     @FXML
+    public void initialize() {
+        helloButton.setDisable(true);
+        byeButton.setDisable(true);
+    }
+
+    @FXML
     public void onButtonClicked(ActionEvent e) {
         if (e.getSource().equals(helloButton)) {
             System.out.println("Hello " + nameField );
