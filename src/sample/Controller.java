@@ -22,4 +22,12 @@ public class Controller {
             System.out.println("Bye " + nameField);
         }
     }
+
+    @FXML
+    public void handleKeyReleased() {
+        String text = nameField.getText();
+        boolean disableButtons = text.isEmpty() || text.trim().isEmpty();
+        helloButton.setDisable(disableButtons);
+        byeButton.setDisable(disableButtons);
+    }
 }
