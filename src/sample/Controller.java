@@ -32,6 +32,9 @@ public class Controller {
         } else if (e.getSource().equals(byeButton)) {
             System.out.println("Bye " + nameField);
         }
+        if (ourCheckbox.isSelected()) {
+            nameField.clear();
+        }
     }
 
     @FXML
