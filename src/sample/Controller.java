@@ -37,6 +37,8 @@ public class Controller {
         }
     }
 
+    //TODO check why JavaFX is not working
+
     @FXML
     public void handleKeyReleased() {
         String text = nameField.getText();
