@@ -40,11 +40,14 @@ public class Controller {
             public void run() {
                 try {
                     Thread.sleep(10000);
+                    ourLabel.setText("We did something!");
                 } catch(InterruptedException event) {
                     //we don´t care about this
                 }
             }
-        }
+        };
+
+        new Thread(task).start();
 
         if (ourCheckbox.isSelected()) {
             nameField.clear();
